@@ -2,7 +2,9 @@
     "env": {
       "browser": true,
       "commonjs": true,
-      "es2021": true
+      "es2021": true,
+      "jest": true
+      
     },
     "extends": [
       "airbnb-base",
@@ -11,6 +13,10 @@
     "parserOptions": {
       "ecmaVersion": "latest"
     },
+    "plugins": [
+      "jest"  // Add this line to use Jest plugin
+    ],
+    
     "rules": {
       "no-console": "off",
       "no-plusplus": "off"
